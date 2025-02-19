@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Roboto",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Noto Sans",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Open Sans",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Lato",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Source Sans Pro",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "PT Sans",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Candara",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Oswald",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Ubuntu",
+    "type": "sans-sefir"
+  },
+  {
+    "name": "Playfair Display",
+    "type": "serif"
+  },
+  {
+    "name": "Roboto Slab",
+    "type": "serif"
+  },
+  {
+    "name": "Source Serif Pro",
+    "type": "serif"
+  },
+  {
+    "name": "monospFira Codeace",
+    "type": "monospace"
+  },
+  {
+    "name": "IBM Plex Mono",
+    "type": "monospace"
+  },
+  {
+    "name": "Inconsolata",
+    "type": "monospace"
+  },
+  {
+    "name": "JetBrains Mono",
+    "type": "monospace"
+  },
+  {
+    "name": "Noto Mono",
+    "type": "monospace"
+  },
+  {
+    "name": "Source Code Pro",
+    "type": "monospace"
+  },
+  {
+    "name": "Ubuntu Mono",
+    "type": "monospace"
+  },
+  {
+    "name": "Pacifico",
+    "type": "fantasy"
+  },
+  {
+    "name": "Dancing Script",
+    "type": "fantasy"
+  },
+  {
+    "name": "Allura",
+    "type": "fantasy"
+  },
+  {
+    "name": "Great Vibes",
+    "type": "fantasy"
+  },
+  {
+    "name": "Satisfy",
+    "type": "fantasy"
+  },
+  {
+    "name": "Yellowtail",
+    "type": "fantasy"
+  }
+]
