@@ -41,6 +41,9 @@ function App() {
     setFontScale,
     fontScales
   } = useFontScale()
+  const changeText = (value: string) => {
+    setText(value)
+  }
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -50,7 +53,7 @@ function App() {
           <Input
             type="text"
             value={text}
-            onChange={value => setText(value.target.value)}
+            onChange={(e) => changeText(e.target.value)}
           />
           <Setting
             baseFontSize={fontSize}
