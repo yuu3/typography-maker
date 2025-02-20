@@ -41,8 +41,8 @@ function App() {
     setFontScale,
     fontScales
   } = useFontScale()
-  const changeText = (value: string) => {
-    setText(value)
+  const changeText = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setText(event.target.value)
   }
 
   return (
@@ -53,7 +53,7 @@ function App() {
           <Input
             type="text"
             value={text}
-            onChange={(e) => changeText(e.target.value)}
+            onChange={changeText}
           />
           <Setting
             baseFontSize={fontSize}
