@@ -48,55 +48,57 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="w-full max-w-3xl mx-auto p-4 grid gap-6">
-        <div className="flex items-center justify-end gap-x-4 mb-6">
-          <Input
-            type="text"
-            value={text}
-            onChange={changeText}
-          />
-          <Setting
-            baseFontSize={fontSize}
-            scale={scale}
-            fontFamily={fontFamily}
-            setBaseFontSize={setFontSize}
-            setScale={setFontScale}
-            setFontFamily={setFontFamily}
-          />
-          <Export
+      <div className="w-full max-w-4xl mx-auto p-6 flex flex-wrap gap-6 items-start">
+        <div className="w-full sm:w-min flex-grow grid gap-6">
+          <div className="flex items-center justify-end gap-4 mb-6">
+            <Input
+              type="text"
+              value={text}
+              onChange={changeText}
+            />
+            <Export
+              fontFamily={fontFamily}
+              fontScales={fontScales}
+              headings={headings}
+              bodies={bodies}
+              labels={labels}
+            />
+          </div>
+          <Headings
+            text={text}
             fontFamily={fontFamily}
             fontScales={fontScales}
             headings={headings}
+            onChangeHeading={onChangeHeading}
+            addHeading={() => addHeading(fontScales)}
+            deleteHeading={deleteHeading}
+          />
+          <Bodies
+            text={text}
+            fontScales={fontScales}
+            fontFamily={fontFamily}
             bodies={bodies}
+            onChangeBody={onChangeBody}
+            addBody={addBody}
+            deleteBody={deleteBody}
+          />
+          <Labels
+            text={text}
+            fontScales={fontScales}
+            fontFamily={fontFamily}
             labels={labels}
+            onChangeLabel={onChangeLabel}
+            addLabel={addLabel}
+            deleteLabel={deleteLabel}
           />
         </div>
-        <Headings
-          text={text}
+        <Setting
+          baseFontSize={fontSize}
+          scale={scale}
           fontFamily={fontFamily}
-          fontScales={fontScales}
-          headings={headings}
-          onChangeHeading={onChangeHeading}
-          addHeading={() => addHeading(fontScales)}
-          deleteHeading={deleteHeading}
-        />
-        <Bodies
-          text={text}
-          fontScales={fontScales}
-          fontFamily={fontFamily}
-          bodies={bodies}
-          onChangeBody={onChangeBody}
-          addBody={addBody}
-          deleteBody={deleteBody}
-        />
-        <Labels
-          text={text}
-          fontScales={fontScales}
-          fontFamily={fontFamily}
-          labels={labels}
-          onChangeLabel={onChangeLabel}
-          addLabel={addLabel}
-          deleteLabel={deleteLabel}
+          setBaseFontSize={setFontSize}
+          setScale={setFontScale}
+          setFontFamily={setFontFamily}
         />
       </div>
       <Footer />

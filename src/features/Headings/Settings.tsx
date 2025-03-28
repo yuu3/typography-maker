@@ -13,7 +13,7 @@ export const Settings = (props: {
   fontWeight: number;
   lineHeight: number;
   letterSpacing: number;
-  onChangeHeading: (value: string, target: "fontWeight" | "lineHeight" | "letterSpacing") => void;
+  onChangeHeading: (value: number, target: "fontWeight" | "lineHeight" | "letterSpacing") => void;
   onDelete: () => void;
 }) => {
   return (
@@ -26,15 +26,15 @@ export const Settings = (props: {
       />
       <FontWeight
         value={`${props.fontWeight}`}
-        onValueChange={value => props.onChangeHeading(value, "fontWeight")}
+        onValueChange={value => props.onChangeHeading(Number(value), "fontWeight")}
       />
       <LineHeight
         value={`${props.lineHeight}`}
-        onChange={value => props.onChangeHeading(value, "lineHeight")}
+        onChange={value => props.onChangeHeading(Number(value), "lineHeight")}
       />
       <LetterSpacing
         value={`${props.letterSpacing}`}
-        onChange={value => props.onChangeHeading(value, "letterSpacing")}
+        onChange={value => props.onChangeHeading(Number(value), "letterSpacing")}
       />
       {(props.tag !== "h1" && (props.tag === props.lastTag)) && (
         <Button

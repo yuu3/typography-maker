@@ -1,18 +1,18 @@
-import { Label } from "@/components/Label"
+import { Label } from "@/components/Label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
-  SelectValue,
-} from "@/components/Select"
+  SelectValue
+} from "@/components/Select";
 
 type Props = {
   value: string;
   sizes: number[];
   disabled?: boolean;
   onValueChange: (value: string) => void;
-}
+};
 
 export const FontSize = (props: Props) => {
   return (
@@ -28,7 +28,7 @@ export const FontSize = (props: Props) => {
           <SelectValue>{props.value}px</SelectValue>
         </SelectTrigger>
         <SelectContent>
-          {props.sizes.map(size => (
+          {props.sizes.map((size) => (
             <SelectItem key={size} value={`${size}`}>
               {parseInt(size.toString())} px
             </SelectItem>
@@ -36,5 +36,5 @@ export const FontSize = (props: Props) => {
         </SelectContent>
       </Select>
     </div>
-  )
-}
+  );
+};

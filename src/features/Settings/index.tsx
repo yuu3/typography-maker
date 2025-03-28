@@ -1,10 +1,9 @@
-import { Settings } from "lucide-react"
-import { Button } from "@/components/Button"
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/PopOver"
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle
+} from "@/components/card"
 import { BaseFontSize } from "./BaseFontSize"
 import { Scale } from "./Scale"
 import { FontFamily } from "./FontFamily"
@@ -20,14 +19,11 @@ type Props = {
 
 export const Setting = (props: Props) => {
   return (
-    <Popover>
-      <PopoverTrigger asChild>
-        <Button variant="outline">
-          <Settings size={16} />
-          Settings
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent className="w-64 grid gap-4">
+    <Card className="min-w-full sm:min-w-48">
+      <CardHeader>
+        <CardTitle>Basic Setting</CardTitle>
+      </CardHeader>
+      <CardContent className="grid gap-4">
         <BaseFontSize
           baseFontSize={props.baseFontSize}
           setBaseFontSize={props.setBaseFontSize}
@@ -40,7 +36,7 @@ export const Setting = (props: Props) => {
           fontFamily={props.fontFamily}
           setFontFamily={props.setFontFamily}
         />
-      </PopoverContent>
-    </Popover>
+      </CardContent>
+    </Card>
   )
 }

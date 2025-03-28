@@ -22,7 +22,7 @@ export const Scale = (props: Props) => {
   }
 
   return (
-    <div className="flex items-center gap-x-2">
+    <div className="grid gap-2">
       <Label
         htmlFor="scale"
         className="w-36"

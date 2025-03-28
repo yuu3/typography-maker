@@ -12,7 +12,7 @@ export const BaseFontSize = (props: Props) => {
   }
 
   return (
-    <div className="flex items-center gap-x-2">
+    <div className="grid gap-2">
       <Label
         className="w-36"
         htmlFor="BaseFontSize"

@@ -81,7 +81,7 @@ export const Headings = (props: Props) => {
                 fontWeight={heading.fontWeight}
                 lineHeight={heading.lineHeight}
                 letterSpacing={heading.letterSpacing}
-                onChangeHeading={(value, target) => props.onChangeHeading(parseInt(value), heading.tag, target)}
+                onChangeHeading={(value, target) => props.onChangeHeading(value, heading.tag, target)}
                 onDelete={() => props.deleteHeading(heading.tag)}
               />
             )}

@@ -1,7 +1,4 @@
-import type {
-  TypeHedingTag,
-  TypeBodiesTag
-} from "@/types"
+import type { TypeHedingTag, TypeBodiesTag } from "@/types";
 
 type Props = {
   text: string;
@@ -11,7 +8,7 @@ type Props = {
   lineHeight: number;
   letterSpacing: number;
   tag: TypeHedingTag | TypeBodiesTag;
-}
+};
 
 export const Preview = (props: Props) => {
   return (
@@ -27,5 +24,5 @@ export const Preview = (props: Props) => {
     >
       {props.text}
     </p>
-  )
-}
+  );
+};

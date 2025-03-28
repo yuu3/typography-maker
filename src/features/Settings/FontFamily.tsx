@@ -34,7 +34,7 @@ export const FontFamily = (props: Props) => {
   }))
 
   return (
-    <div className="w-full flex items-center gap-x-2">
+    <div className="w-full grid gap-2">
       <Label
         htmlFor="fontFamily"
         className="w-20"
@@ -47,7 +47,7 @@ export const FontFamily = (props: Props) => {
             variant="outline"
             role="combobox"
             aria-expanded={open}
-            className="w-32 flex-grow px-2 justify-between"
+            className="w-full px-3 justify-between"
           >
             <p className="truncate">
               {props.fontFamily
