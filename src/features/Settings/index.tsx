@@ -3,7 +3,7 @@ import {
   CardContent,
   CardHeader,
   CardTitle
-} from "@/components/card"
+} from "@/components/Card"
 import { BaseFontSize } from "./BaseFontSize"
 import { Scale } from "./Scale"
 import { FontFamily } from "./FontFamily"
